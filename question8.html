@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハロウィンイベントWEBサイト 謎解き</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="Halloween.js"></script>
+    <link href="title.html">
+    <link href="index.html">
+    <link href="finish.html">
+    <link href="question.html"><link href="question2.html"><link href="question3.html"><link href="question4.html"><link href="question5.html"><link href="question6.html"><link href="question7.html"><link href="question9.html"><link href="question10.html">
+    <link rel="icon" type="image/png" href="images/halloween_mark_pumpkin.png">
+</head>
+<body>
+    <!-- 謎解き画像など -->
+    <h1 class="question-title">謎解き</h1>
+    <div class="question"></div>
+    <h2>第8問</h2>
+    <img class="question-image" src="images/あるなしクイズ.png" alt="謎解き画像" id="questionImg8" width="80%" height="50%">
+    <h1> </h1>
+    <div class="nice-wrap">
+    <input class="nice-textbox" type="text" value="" id="textbox" onchange="textboxView8(this.value)"></input>
+    <label class="nice-label" for="Username">回答</label>
+    </div>
+    </div>
+    </div>
+    <h1>--------------------------------</h1>
+    <div class="content">
+        <input class="button js-modal-open" id="button-kaitou" value="回答する" disabled=true></input>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <h1 id="result"></h1>
+            <p id="answer"></p>
+            <h1>---------------------</h1>
+            <a class="button js-modal-close" id="nextQuestionButton" href="question9.html">次の問題に進む</a>
+        </div>
+    </div>
+    <h1>--------------------------------</h1>
+<footer>
+    <div class="wrapper">
+    <p>made by N-highSchool YOKOHAMA-CP EventGroup</p>
+    </div>
+</footer>
+</body>
+</html>
